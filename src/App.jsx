@@ -54,6 +54,9 @@ function App() {
   return (
     <div>
 
+      <div className="bubble1"></div>
+      <div className="bubble2"></div>
+
       <div className="navbar">
         <div className="logo">
           <img src={logo} alt="" />
@@ -83,6 +86,9 @@ function App() {
           <input type="text" placeholder='Search a city...' />
           <button><TbCloudSearch /></button>
         </form>
+        <p>Tuesday, 31 May 2024 | Local time: 12:34 PM</p>
+        <h1>Kigali, RW</h1>
+        <h5>Cloudy</h5>
       </div>
 
 

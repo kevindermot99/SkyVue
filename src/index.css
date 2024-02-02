@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   box-sizing: border-box;
 }
 
@@ -19,6 +20,36 @@ body {
   --main-color: #356EC5;
 }
 
+#root{
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+.bubble1{
+  min-width: 340px;
+  min-height: 400px;
+  position: fixed;
+  top: -70px;
+  border-radius: 50%;
+  right: 9%;
+  rotate: -40deg;
+  background-color: #2135508c;
+  filter: blur(80px);
+}
+
+.bubble2{
+  min-width: 140px;
+  min-height: 300px;
+  position: fixed;
+  top: 130px;
+  border-radius: 50%;
+  left: 1%;
+  rotate: -10deg;
+  background-color: #21355093;
+  filter: blur(80px);
+}
+
 .navbar {
   /* background-color: cadetblue; */
   display: flex;
@@ -31,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .navbar .logo img {
@@ -40,7 +71,8 @@ body {
 
 .navbar .logo h1 {
   color: var(--text-color-100);
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .nav-links{
@@ -72,14 +104,19 @@ body {
   font-size: 26px;
 } 
 
+.nl-icon:hover svg{
+  color: var(--main-color);
+}
+
 .nl-switch{
-  background-color: var(--bg);
+  background-color: transparent;
   width: 100px;
   height: 40px;
   display: grid;
   grid-template-columns: 50% 50%;
   border-radius: 8px;
   position: relative;
+  border: 1px solid var(--border-lines);
   /* gap: 5px; */
 }
 
@@ -90,6 +127,7 @@ body {
   color: var(--text-color-100);
   cursor: pointer;
   z-index: 10;
+  font-weight: 600;
 }
 
 .nl-switch::after{
@@ -101,7 +139,7 @@ body {
   left: 5px;
   bottom: 0;
   margin: auto;
-  background-color: var(--main-color);
+  background: linear-gradient(120deg, var(--main-color), #00000000 110%);
   border-radius: 5px;
   transition: .5s;
 }
@@ -121,7 +159,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .hero form{
@@ -138,7 +178,7 @@ body {
 
 .hero input{
   width: 300px;
-  height: 50px;
+  height: 45px;
   padding: 0 20px;
   border: none;
   outline: none;
@@ -146,25 +186,61 @@ body {
   border-radius: 8px;
   color: var(--text-color-100);
   font-size: 14px;
+  border: 1px solid var(--border-lines);
+  font-family: 'Poppins', sans-serif;
 }
 
-
+.hero input:focus{
+  border-color: var(--main-color);
+}
 
 .hero button{
   height: 50px;
-  width: 50px;
+  width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   outline: none;
-  background-color: var(--bg);
+  background-color: transparent;
   border-radius: 8px;
-  color: var(--text-color-50);
+  color: var(--text-color-100);
   font-size: 26px;
   cursor: pointer;
+  transition: .2s;
 }
 
 .hero button:hover{
-  background-color: var(--bg);
+  color: var(--main-color);
+}
+
+.hero p{
+  color: var(--text-color-50);
+  font-size: 18px;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.hero h1{
+  color: var(--text-color-100);
+  font-size: 18px;
+  padding: 10px;
+  font-size: 65px;
+  font-weight: 500;
+}
+
+body.dark .hero h1{
+    background: linear-gradient(180deg, var(--text-color-100), #fafafa3d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+}
+
+.hero h5{
+  color: var(--main-color);
+  font-size: 18px;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 500;
 }
