@@ -35,6 +35,22 @@ function App() {
       })
   }, []);
 
+  const cDeegre = () => {
+    setTimeout(() => {
+      document.querySelector(".nl-switch").classList.remove("fd");
+      document.querySelector(".nl-switch").classList.add("cd");
+    }, 100);
+
+  }
+
+  const fDeegre = () => {
+    setTimeout(() => {
+      document.querySelector(".nl-switch").classList.remove("cd");
+      document.querySelector(".nl-switch").classList.add("fd");
+    }, 100);
+
+  }
+
   return (
     <div>
 
@@ -46,6 +62,10 @@ function App() {
 
 
         <div className="nav-links">
+          <div className="nl-switch cd">
+            <span onClick={cDeegre}>&deg;C</span>
+            <span onClick={fDeegre}>&deg;F</span>
+          </div>
           <div className="nl-icon">
             <TbCaptureFilled />
           </div>
