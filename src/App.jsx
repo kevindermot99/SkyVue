@@ -4,6 +4,7 @@ import logo from '../public/logo.png'
 import { ImGithub } from "react-icons/im";
 import { TbSunMoon } from "react-icons/tb";
 import { TbCaptureFilled } from "react-icons/tb";
+import { TbCloudSearch } from "react-icons/tb";
 
 
 function App() {
@@ -56,6 +57,14 @@ function App() {
           </a>
         </div>
       </div>
+
+      <div className="hero">
+        <form>
+          <input type="text" placeholder='Search a city...' />
+          <button><TbCloudSearch /></button>
+        </form>
+      </div>
+
 
     </div>
   )

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,8 @@ body {
   --body-color: #0F172A;
   --text-color-100: #E2E8F0;
   --text-color-50: #7B899D;
-  --bg: #1e293b57;
+  --bg: #1e293b93;
+  --border-lines: #323c4db4;
 }
 
 .navbar {
@@ -21,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 20px;
 }
 
 .navbar .logo {
@@ -45,7 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: var(--text-color-100);
-  gap: 10px;
+  gap: 15px;
   height: 40px;
 }
 
@@ -68,3 +70,57 @@ body {
   color: var(--text-color-50);
   font-size: 26px;
 } 
+
+
+.hero{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero form{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero input::placeholder{
+  color: var(--text-color-50);
+}
+
+.hero input{
+  width: 300px;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  background-color: var(--bg);
+  border-radius: 8px;
+  color: var(--text-color-100);
+  font-size: 14px;
+}
+
+
+
+.hero button{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: var(--bg);
+  border-radius: 8px;
+  color: var(--text-color-50);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.hero button:hover{
+  background-color: var(--bg);
+}
