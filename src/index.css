@@ -1,15 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   font-family: 'League Spartan', sans-serif;
 }
 
-body{
+body {
   background-color: var(--body-color);
 
   /* dark-colors */
-  --body-color: #0b0f1a;
+  --body-color: #0F172A;
   --text-color-100: #E2E8F0;
   --text-color-50: #7B899D;
+  --bg: #1e293b57;
 }
+
+.navbar {
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .logo img {
+  width: 40px;
+}
+
+.navbar .logo h1 {
+  color: var(--text-color-100);
+  font-size: 24px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--text-color-100);
+  gap: 10px;
+  height: 40px;
+}
+
+.nl-icon{
+  /* background-color: #444; */
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.nl-icon:hover{
+  background-color: var(--bg);
+}
+
+.nl-icon svg{
+  color: var(--text-color-50);
+  font-size: 26px;
+} 
