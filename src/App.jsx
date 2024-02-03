@@ -12,7 +12,7 @@ import { MdOutlineWindPower } from "react-icons/md";
 import { BsSunrise } from "react-icons/bs";
 import { BsSunset } from "react-icons/bs";
 import { IoSunnyOutline } from "react-icons/io5";
-
+import { MdMyLocation } from "react-icons/md";
 
 function App() {
 
@@ -71,7 +71,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className='wrapper'>
 
       <div className="bubble1"></div>
       <div className="bubble2"></div>
@@ -84,9 +84,12 @@ function App() {
 
 
         <div className="nav-links">
-          <div className="nl-switch cd">
+          <div className="nl-switch">
             <span onClick={cDeegre}>&deg;C</span>
             <span onClick={fDeegre}>&deg;F</span>
+          </div>
+          <div className="nl-icon">
+            <MdMyLocation />
           </div>
           <div className="nl-icon">
             <TbCaptureFilled />
