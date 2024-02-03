@@ -269,7 +269,7 @@ body.dark .hero h1 {
 .info{
   /* background-color: cadetblue; */
   width: 100%;
-  min-height: 400px;
+  min-height: 100px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -277,13 +277,19 @@ body.dark .hero h1 {
 .info-left{
   /* background-color: rgba(95, 158, 160, 0.11); */
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .il-up{
+  width: 100%;
   min-height: 190px;
   /* background-color: rgba(95, 158, 160, 0.11); */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
 }
@@ -311,9 +317,42 @@ body.dark .hero h1 {
   color: var(--text-color-50);
   font-weight: 400;
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.il-up .ilu-item h6 svg{
+  font-size: 20px;
 }
 
 .il-up .ilu-item h6 span{
+  font-weight: 600;
+  color: var(--text-color-100);
+}
+
+.il-down{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color-100);
+}
+
+.il-down h6{
+  font-size: 20px;
+  color: var(--text-color-50);
+  font-weight: 400;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.il-down h6 span{
   font-weight: 600;
   color: var(--text-color-100);
 }
