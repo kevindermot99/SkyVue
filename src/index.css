@@ -73,10 +73,10 @@ body {
 }
 
 .navbar .logo h1 {
-  font-size: 25px;
-  text-transform: uppercase;
+  font-size: 35px;
+  text-transform: capitalize;
   font-weight: 600;
-  background: linear-gradient(180deg, var(--text-color-100), #fafafa3d 140%);
+  background: linear-gradient(180deg, var(--text-color-100), #fafafa3d 170%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -238,20 +238,20 @@ body {
 .hero p {
   color: var(--text-color-50);
   font-size: 18px;
-  padding: 5px 0;
+  padding: 15px 0 0;
   font-size: 18px;
 }
 
 .hero h1 {
   color: var(--text-color-100);
   font-size: 18px;
-  padding: 10px;
+  padding: 10px 10px 0px;
   font-size: 65px;
   font-weight: 500;
 }
 
 body.dark .hero h1 {
-  background: linear-gradient(180deg, var(--text-color-100), #fafafa3d);
+  background: linear-gradient(180deg, var(--text-color-100), #fafafa3d 170%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -259,11 +259,11 @@ body.dark .hero h1 {
 }
 
 .hero h5 {
-  color: var(--main-color);
+  color: var(--text-color-50);
   font-size: 18px;
   padding: 5px 0;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .info{
@@ -275,5 +275,45 @@ body.dark .hero h1 {
 }
 
 .info-left{
+  /* background-color: rgba(95, 158, 160, 0.11); */
+  padding: 20px;
+}
 
+.il-up{
+  min-height: 190px;
+  /* background-color: rgba(95, 158, 160, 0.11); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.il-up .ilu-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.il-up .ilu-item img{
+  width: 100px;
+}
+
+.il-up h1 {
+  font-size: 80px;
+  font-weight: 600;
+  color: var(--text-color-100);
+}
+
+.il-up .ilu-item h6{
+  font-size: 20px;
+  color: var(--text-color-50);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.il-up .ilu-item h6 span{
+  font-weight: 600;
+  color: var(--text-color-100);
 }

@@ -6,6 +6,9 @@ import { TbSunMoon } from "react-icons/tb";
 import { TbCaptureFilled } from "react-icons/tb";
 import { TbCloudSearch } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
+import { CiDroplet } from "react-icons/ci";
+import { CiTempHigh } from "react-icons/ci";
+import { MdOutlineWindPower } from "react-icons/md";
 
 function App() {
 
@@ -107,7 +110,20 @@ function App() {
       </div>
 
       <div className="info">
-        <div className="info-left"></div>
+        <div className="info-left">
+          <div className="il-up">
+            <div className='ilu-item'><img src="https://static.vecteezy.com/system/resources/previews/016/314/339/original/red-circle-red-dot-icon-free-png.png" alt="" /></div>
+            <h1 className='ilu-item'>46&deg;</h1>
+            <div className='ilu-item'>
+              <h6><CiDroplet /> Real fill:<span> 32&deg;</span></h6>
+              <h6><CiTempHigh /> Humidity:<span> 65%</span></h6>
+              <h6><MdOutlineWindPower /> wind:<span> 11 km/h</span></h6>
+            </div>
+          </div>
+          <div className="il-down">
+            
+          </div>
+        </div>
         <div className="info-right"></div>
       </div>
 
