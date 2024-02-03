@@ -37,19 +37,31 @@ function App() {
 
   const cDeegre = () => {
     setTimeout(() => {
+      localStorage.setItem("measure", "cdeegre")
       document.querySelector(".nl-switch").classList.remove("fd");
       document.querySelector(".nl-switch").classList.add("cd");
     }, 100);
-
   }
 
   const fDeegre = () => {
     setTimeout(() => {
+      localStorage.setItem("measure", "fdeegre")
       document.querySelector(".nl-switch").classList.remove("cd");
       document.querySelector(".nl-switch").classList.add("fd");
     }, 100);
-
   }
+
+  useEffect(() => {
+    const choosenMeasure = localStorage.getItem("measure")
+    if (choosenMeasure === "cdeegre") {
+      document.querySelector(".nl-switch").classList.remove("fd");
+      document.querySelector(".nl-switch").classList.add("cd");
+    }
+    else if (choosenMeasure === "fdeegre") {
+      document.querySelector(".nl-switch").classList.remove("cd");
+      document.querySelector(".nl-switch").classList.add("fd");
+    }
+  }, []);
 
   return (
     <div>
