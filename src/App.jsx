@@ -132,7 +132,36 @@ function App() {
           </div>
         </div>
         <div className="info-right">
-          
+          <div className="forecast">
+            <h4>Hourly forecast</h4>
+            <div className='time-forecast'>
+              <span>
+                <p>02:00 PM</p>
+                <img src="https://static.vecteezy.com/system/resources/previews/016/314/339/original/red-circle-red-dot-icon-free-png.png" alt="" />
+                <h5>22&deg;</h5>
+              </span>
+              <span>
+                <p>02:00 PM</p>
+                <img src="https://static.vecteezy.com/system/resources/previews/016/314/339/original/red-circle-red-dot-icon-free-png.png" alt="" />
+                <h5>22&deg;</h5>
+              </span>
+              <span>
+                <p>02:00 PM</p>
+                <img src="https://static.vecteezy.com/system/resources/previews/016/314/339/original/red-circle-red-dot-icon-free-png.png" alt="" />
+                <h5>22&deg;</h5>
+              </span>
+              <span>
+                <p>02:00 PM</p>
+                <img src="https://static.vecteezy.com/system/resources/previews/016/314/339/original/red-circle-red-dot-icon-free-png.png" alt="" />
+                <h5>22&deg;</h5>
+              </span>
+              <span>
+                <p>02:00 PM</p>
+                <img src="https://static.vecteezy.com/system/resources/previews/016/314/339/original/red-circle-red-dot-icon-free-png.png" alt="" />
+                <h5>22&deg;</h5>
+              </span>
+            </div>  
+          </div>
         </div>
       </div>
 
