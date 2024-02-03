@@ -12,11 +12,11 @@ body {
   background-color: var(--body-color);
 
   /* dark-colors */
-  --body-color: #0F172A;
+  --body-color: #0c1324;
   --text-color-100: #E2E8F0;
   --text-color-50: #7B899D;
   --bg: #1e293b93;
-  --border-lines: #323c4db4;
+  --border-lines: #3d485c8f;
   --main-color: #356EC5;
 }
 
@@ -34,8 +34,9 @@ body {
   border-radius: 50%;
   right: 9%;
   rotate: -40deg;
-  background-color: #2135508c;
+  background-color: #21355067;
   filter: blur(80px);
+  z-index: -2;
 }
 
 .bubble2{
@@ -48,6 +49,7 @@ body {
   rotate: -10deg;
   background-color: #21355093;
   filter: blur(80px);
+  z-index: -2;
 }
 
 .navbar {
@@ -177,9 +179,9 @@ body {
 }
 
 .hero input{
-  width: 300px;
+  width: 340px;
   height: 45px;
-  padding: 0 20px;
+  padding: 0 20px 0 37px;
   border: none;
   outline: none;
   background-color: var(--bg);
@@ -188,10 +190,26 @@ body {
   font-size: 14px;
   border: 1px solid var(--border-lines);
   font-family: 'Poppins', sans-serif;
+  transition: .3s;
 }
 
 .hero input:focus{
   border-color: var(--main-color);
+  box-shadow: 0px 0px 0px 1px var(--main-color);
+}
+
+.hero .srch{
+  position: relative;
+}
+
+.hero .srch svg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto;
+  font-size: 22px;
+  color: var(--text-color-50);
 }
 
 .hero button{
@@ -208,6 +226,7 @@ body {
   font-size: 26px;
   cursor: pointer;
   transition: .2s;
+  display: none;
 }
 
 .hero button:hover{

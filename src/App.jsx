@@ -5,7 +5,7 @@ import { ImGithub } from "react-icons/im";
 import { TbSunMoon } from "react-icons/tb";
 import { TbCaptureFilled } from "react-icons/tb";
 import { TbCloudSearch } from "react-icons/tb";
-
+import { IoIosSearch } from "react-icons/io";
 
 function App() {
 
@@ -83,7 +83,10 @@ function App() {
 
       <div className="hero">
         <form>
-          <input type="text" placeholder='Search a city...' />
+          <label className='srch'>
+            <IoIosSearch />
+            <input type="text" placeholder='Search a city...' />
+          </label>
           <button><TbCloudSearch /></button>
         </form>
         <p>Tuesday, 31 May 2024 | Local time: 12:34 PM</p>
