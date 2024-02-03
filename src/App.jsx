@@ -100,6 +100,18 @@ function App() {
         </div>
       </div>
 
+      <div className="quick-links">
+        <button>London</button>
+        <button>Sydney</button>
+        <button>Nairobi</button>
+        <button>Kigali</button>
+        <button>Tokyo</button>
+        <button>Chicago</button>
+        <button>Beinjing</button>
+        <button>Toronto</button>
+        <button>Paris</button>
+      </div>
+
       <div className="hero">
         <form>
           <label className='srch'>
@@ -125,9 +137,9 @@ function App() {
             </div>
           </div>
           <div className="il-down">
-            <h6><BsSunrise /> Rise: <span>06:45 AM</span></h6>|
-            <h6><BsSunset /> set: <span>07:45 PM</span></h6>|
-            <h6><IoSunnyOutline /> High: <span>45&deg;</span></h6>|
+            <h6><BsSunrise /> Rise: <span>06:45 AM</span></h6>
+            <h6><BsSunset /> set: <span>07:45 PM</span></h6>
+            <h6><IoSunnyOutline /> High: <span>45&deg;</span></h6>
             <h6><IoSunnyOutline /> Low: <span>40&deg;</span></h6>
           </div>
         </div>
