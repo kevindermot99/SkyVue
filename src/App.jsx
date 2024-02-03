@@ -106,6 +106,10 @@ function App() {
         <h5>Cloudy</h5>
       </div>
 
+      <div className="info">
+        <div className="info-left"></div>
+        <div className="info-right"></div>
+      </div>
 
     </div>
   )

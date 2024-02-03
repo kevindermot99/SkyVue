@@ -12,12 +12,12 @@ body {
   background-color: var(--body-color);
 
   /* dark-colors */
-  --body-color: #0c1324;
-  --text-color-100: #E2E8F0;
-  --text-color-50: #7B899D;
-  --bg: #1e293b93;
+  --body-color: #1a1b1f;
+  --text-color-100: #f1f1f1;
+  --text-color-50: #9c9c9c;
+  --bg: #282f3565;
   --border-lines: #3d485c8f;
-  --main-color: #356EC5;
+  --main-color: #6e6e6e;
 }
 
 #root {
@@ -34,8 +34,8 @@ body {
   border-radius: 50%;
   right: 9%;
   rotate: -40deg;
-  background-color: #21355067;
-  filter: blur(80px);
+  background-color: #2d333b67;
+  filter: blur(100px);
   z-index: -2;
 }
 
@@ -47,8 +47,8 @@ body {
   border-radius: 50%;
   left: 1%;
   rotate: -10deg;
-  background-color: #21355093;
-  filter: blur(80px);
+  background-color: #30343a93;
+  filter: blur(100px);
   z-index: -2;
 }
 
@@ -69,10 +69,12 @@ body {
 
 .navbar .logo img {
   width: 40px;
+  display: none;
 }
 
 .navbar .logo h1 {
-  font-size: 24px;
+  font-size: 25px;
+  text-transform: uppercase;
   font-weight: 600;
   background: linear-gradient(180deg, var(--text-color-100), #fafafa3d 140%);
   background-clip: text;
@@ -108,10 +110,6 @@ body {
 .nl-icon svg {
   color: var(--text-color-50);
   font-size: 26px;
-}
-
-.nl-icon:hover svg {
-  color: var(--main-color);
 }
 
 .nl-switch {
@@ -264,6 +262,18 @@ body.dark .hero h1 {
   color: var(--main-color);
   font-size: 18px;
   padding: 5px 0;
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 500;
+}
+
+.info{
+  /* background-color: cadetblue; */
+  width: 100%;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.info-left{
+
 }
