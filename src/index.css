@@ -121,6 +121,10 @@ body {
   border-color: var(--border-lines);
 }
 
+.nl-icon:active{
+  transform: scale(0.9);
+}
+
 .nl-icon svg {
   color: var(--text-color-50);
   font-size: 26px;
@@ -180,11 +184,20 @@ body {
   /* background-color: cadetblue; */
   padding: 12px; 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
   /* margin-top: 20px; */
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: auto;
   margin-bottom: 10px;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.quick-links::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 

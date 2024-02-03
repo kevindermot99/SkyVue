@@ -119,7 +119,7 @@ function App() {
         <form>
           <label className='srch'>
             <IoIosSearch />
-            <input type="text" placeholder='Search a city...' />
+            <input type="text" placeholder='Search a city...' autoFocus={true} onBlur={({ target }) => target.focus()} />
           </label>
           <button><TbCloudSearch /></button>
         </form>
