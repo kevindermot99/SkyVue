@@ -343,7 +343,11 @@ body.dark .hero h1 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 35px;
+  gap: 25 px;
+  background-color: #7777770a;
+  border-radius: 12px;
+  padding: 40px ;
+  margin-right: 5px;
 }
 
 .il-up{
@@ -434,8 +438,8 @@ body.dark .hero h1 {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  background-color: #aaaaaa0a;
-  border-radius: 8px;
+  background-color: #7777770a;
+  border-radius: 12px;
   padding: 40px ;
 }
 
