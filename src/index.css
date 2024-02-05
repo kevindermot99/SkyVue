@@ -426,7 +426,6 @@ body.dark .hero h1 {
 
 .info-right{
   /* background-color: #355c803b; */
-  padding: 40px 40px;
 }
 
 .forecast{
@@ -435,6 +434,9 @@ body.dark .hero h1 {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  background-color: #aaaaaa0a;
+  border-radius: 8px;
+  padding: 40px ;
 }
 
 .forecast h4{
